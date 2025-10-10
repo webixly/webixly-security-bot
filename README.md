@@ -4,8 +4,6 @@
 
 [![shield](https://img.shields.io/badge/status-production-brightgreen)](https://github.com/yourusername/yourrepo) [![python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/) [![discord](https://img.shields.io/badge/discord-bot-purple)](https://discord.com/developers) [![license](https://img.shields.io/badge/license-MIT-lightgrey)](./LICENSE)
 
-![cyber](https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif)
-
 ```
 ██╗    ██╗███████╗██████╗ ██╗██╗  ██╗██╗  ██╗██╗  ██╗
 ██║    ██║██╔════╝██╔══██╗██║╚██╗██╔╝██║ ██╔╝╚██╗██╔╝
