@@ -35,8 +35,8 @@
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/yourusername/yourrepo.git
-cd yourrepo
+git clone https://github.com/webixly/webixly-security-bot.git
+cd webixly-security-bot
 ```
 
 2. (Optional) Create virtual environment:
@@ -65,7 +65,7 @@ GUILD_ID=123456789012345678
 5. Run the bot:
 
 ```bash
-python bot.py
+python discordBot.py
 ```
 
 Expected output:
