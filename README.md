@@ -7,7 +7,7 @@
 
 **⚡ Discord Auto-Defense System — Hacker Style Edition**
 
-[![shield](https://img.shields.io/badge/status-production-brightgreen)](https://github.com/yourusername/yourrepo) [![python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/) [![discord](https://img.shields.io/badge/discord-bot-purple)](https://discord.com/developers) [![license](https://img.shields.io/badge/license-MIT-lightgrey)](./LICENSE)
+[![repo](https://img.icons8.com/ios-filled/20/FFFFFF/github.png)](https://github.com/yourusername/yourrepo) [![python](https://img.icons8.com/ios-filled/20/FFFFFF/python.png)](https://www.python.org/) [![discord](https://img.icons8.com/ios-filled/20/FFFFFF/discord-logo.png)](https://discord.com/developers) [![license](https://img.icons8.com/ios-filled/20/FFFFFF/certificate.png)](./LICENSE)
 
 ```
 ██╗    ██╗███████╗██████╗ ██╗██╗  ██╗██╗  ██╗██╗  ██╗
@@ -17,10 +17,6 @@
 ╚███╔███╔╝███████╗██║  ██║██║██╔╝ ██╗██║  ██╗██╔╝ ██╗
  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
 ```
-
-## 🎥 Demo Preview
-
-![demo](https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif)
 
 ## 📋 Overview
 
