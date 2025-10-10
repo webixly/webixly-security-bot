@@ -1,0 +1,16 @@
+{
+  "restricted_channel_id": 1234567899999999999,
+  "whitelist": [
+    1234567899999999999,
+    1234567899999999999,
+    1234567899999999999,
+    1234567899999999999
+],
+  "spam_config": {
+    "msg_threshold": 6,
+    "time_window": 8,
+    "duplicate_threshold": 4,
+    "mention_threshold": 5,
+    "delete_history_minutes": 5
+  }
+}
