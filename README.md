@@ -85,10 +85,44 @@ Expected output:
 
 ## ⚡ Commands
 
-| Command                   | Description              | Permission |
-| ------------------------- | ------------------------ | ---------- |
-| `!ping`                   | Check bot status         | Everyone   |
-| `!setrestricted #channel` | Set a restricted channel | Admin Only |
+### ✅ 1. `!ping`
+
+Check if the bot is online.
+
+```
+!ping
+```
+
+Response:
+
+```
+🏓 Pong! Bot is online and secured.
+```
+
+### ✅ 2. `!setrestricted` *(Admin Only)*
+
+Set a protected channel where any message sent triggers an instant ban.
+
+```
+!setrestricted #channel
+```
+
+Or:
+
+```
+!setrestricted channel_name
+```
+
+What happens:
+
+* Saves channel as restricted
+* Pins automatic warning
+* Any user message triggers:
+
+  1. Message deletion
+  2. Cleanup of history
+  3. Instant ban
+  4. Log entry
 
 ## 🚫 Restricted Channel Behavior
 
