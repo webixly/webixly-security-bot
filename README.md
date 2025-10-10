@@ -1,97 +1,107 @@
-# 🛡️ Webixly Security Bot --- Usage Guide
+# 🧨 Webixly Security Bot
+
+**⚡ Discord Auto-Defense System — Hacker Style Edition**
+
+![shield](https://img.shields.io/badge/status-production-brightgreen) ![python](https://img.shields.io/badge/python-3.8%2B-blue) ![discord](https://img.shields.io/badge/discord-bot-purple) ![license](https://img.shields.io/badge/license-MIT-lightgrey)
+
+![cyber](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
+
+```
+██╗    ██╗███████╗██████╗ ██╗██╗  ██╗██╗  ██╗██╗  ██╗
+██║    ██║██╔════╝██╔══██╗██║╚██╗██╔╝██║ ██╔╝╚██╗██╔╝
+██║ █╗ ██║█████╗  ██████╔╝██║ ╚███╔╝ █████╔╝  ╚███╔╝ 
+██║███╗██║██╔══╝  ██╔══██╗██║ ██╔██╗ ██╔═██╗  ██╔██╗ 
+╚███╔███╔╝███████╗██║  ██║██║██╔╝ ██╗██║  ██╗██╔╝ ██╗
+ ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
+```
 
 ## 📋 Overview
 
-**Webixly Security Bot** is an advanced Discord security bot that
-automatically detects and bans users who spam, mention too many members,
-or send messages in restricted channels.\
-It also logs every moderation action in a specified modlog channel.
+**Webixly Security Bot** is a powerful Discord security system that blocks spam, mass mentions, message floods, and unauthorized activity automatically. Every action is logged in the modlog channel.
 
-------------------------------------------------------------------------
+## ⚙️ Requirements
 
-## ⚙️ Setup Instructions
+* Python 3.8+
+* Libraries:
 
-### 1. Create a `.env` file
+  * `discord.py`
+  * `python-dotenv`
 
-Inside the same folder as your bot script, create a `.env` file with the
-following content:
+## 🚀 Installation & Run
 
-``` env
+1. Clone the repo:
+
+```bash
+git clone https://github.com/yourusername/yourrepo.git
+cd yourrepo
+```
+
+2. (Optional) Create virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+venv\\Scripts\\activate   # Windows
+```
+
+3. Install dependencies:
+
+```bash
+pip install discord.py python-dotenv
+```
+
+4. Create a `.env` file:
+
+```env
 DISCORD_TOKEN=YOUR_BOT_TOKEN_HERE
 RESTRICTED_CHANNEL_ID=1234567899999999999
 MODLOG_CHANNEL_ID=1234567899999999999
 GUILD_ID=123456789012345678
-         
 ```
 
--   **DISCORD_TOKEN** → Your Discord bot token (from [Discord Developer
-    Portal](https://discord.com/developers/applications))\
--   **MODLOG_CHANNEL_ID** → The ID of the channel where moderation logs
-    will be sent
+5. Run the bot:
 
-------------------------------------------------------------------------
-
-### 2. Install Dependencies
-
-Run this command in your terminal:
-
-``` bash
-pip install discord.py python-dotenv
-```
-
-------------------------------------------------------------------------
-
-### 3. Run the Bot
-
-Start the bot using:
-
-``` bash
+```bash
 python bot.py
 ```
 
-You should see something like:
+Expected output:
 
-    ✅ Logged in as Webixly Security Bot (ID: 123456789012345678)
+```
+✅ Logged in as Webixly Security Bot (ID: 123456789012345678)
+```
 
-------------------------------------------------------------------------
+## 🛠️ Features
+
+* Automatic spam detection & banning
+* Restricted channels with instant ban
+* Duplicate/rapid message defense
+* Mass mention detection
+* Message history wipe on ban
+* Full moderation logs
 
 ## ⚡ Commands
 
-  -------------------------------------------------------------------------------
-  Command                     Description                Permission
-  --------------------------- -------------------------- ------------------------
-  `!ping`                     Checks if the bot is       Everyone
-                              online                     
-
-  `!setrestricted #channel`   Sets a restricted channel  Admin only
-                              where sending messages     
-                              will trigger an **instant  
-                              ban**                      
-  -------------------------------------------------------------------------------
-
-------------------------------------------------------------------------
+| Command                   | Description              | Permission |
+| ------------------------- | ------------------------ | ---------- |
+| `!ping`                   | Check bot status         | Everyone   |
+| `!setrestricted #channel` | Set a restricted channel | Admin Only |
 
 ## 🚫 Restricted Channel Behavior
 
-Once you set a restricted channel using `!setrestricted #channel`: - The
-bot will **pin a warning message** automatically. - Anyone (not in
-whitelist) who sends a message in that channel will: 1. Have their
-message deleted\
-2. Be **automatically banned** 3. Have their recent messages (last 5
-minutes) deleted
+When you set a channel as restricted:
 
-------------------------------------------------------------------------
+* A pinned warning is created
+* Any message sent triggers:
 
-## 🔄 Auto-Spam Detection
+  1. Message deletion
+  2. Instant ban
+  3. Removal of last 5 minutes of messages
+  4. Log in modlog channel
 
-The bot automatically detects and bans users who: - Send too many
-messages too fast\
-- Send duplicate messages repeatedly\
-- Mention too many users at once
+## 🔄 Anti-Spam Config (`config.json`)
 
-Default thresholds (editable in `config.json`):
-
-``` json
+```json
 {
   "msg_threshold": 5,
   "time_window": 7,
@@ -101,36 +111,29 @@ Default thresholds (editable in `config.json`):
 }
 ```
 
-------------------------------------------------------------------------
+## 📂 File Structure
 
-## 📁 Files
+* `bot.py` — main script
+* `.env` — environment variables
+* `config.json` — settings
 
-  -----------------------------------------------------------------------
-  File                       Purpose
-  -------------------------- --------------------------------------------
-  `bot.py`                   Main bot script
+## 🧪 Example
 
-  `.env`                     Environment variables
-
-  `config.json`              Stores settings (restricted channel, spam
-                             config, whitelist)
-  -----------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-## 🧩 Example Usage
-
-``` bash
+```bash
 !setrestricted #security-zone
 ```
 
-➡️ Anyone sending a message in `#security-zone` will be instantly
-banned.\
-All actions are logged in the modlog channel.
+Anyone typing there gets banned instantly + logs recorded.
 
-------------------------------------------------------------------------
+## 🤝 Contributing
 
-## 🪪 Credits
+Feel free to open Issues or PRs. Follow existing code style and include clear descriptions.
 
-Developed by **Pablo --- Webixly Security**\
-Secure, Smart, and Automatic Discord Protection.
+## 🪪 License
+
+MIT License — use freely with credit.
+
+## 🔥 Credits
+
+Developed by **Pablo — Webixly Security**
+Secure • Smart • Automatic
