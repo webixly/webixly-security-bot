@@ -1,3 +1,5 @@
+![banner](https://i.ibb.co/yqFvT2H/cyber-banner-dark.jpg)
+
 # 🧨 Webixly Security Bot
 
 **⚡ Discord Auto-Defense System — Hacker Style Edition**
