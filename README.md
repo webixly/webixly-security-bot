@@ -32,9 +32,14 @@ cd webixly-security-bot
 2. (Optional) Create virtual environment:
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # macOS/Linux
-venv\\Scripts\\activate   # Windows
+# Create virtual environment
+python -m venv security-env
+
+# Activate environment
+# Windows:
+security-env\Scripts\activate
+# macOS/Linux:
+source security-env/bin/activate
 ```
 
 3. Install dependencies:
@@ -148,6 +153,70 @@ When you set a channel as restricted:
 
 ```bash
 !setrestricted #security-zone
+```
+## Whitelist Management (Admin Only)
+✅ !whitelist add @user
+
+
+Add user to whitelist (exempt from security rules).
+
+```
+!whitelist add @username
+
+```
+## ✅ !whitelist remove @user
+
+Remove user from whitelist.
+```
+
+!whitelist remove @username
+
+```
+
+
+##✅ !whitelist show
+Display current whitelist.
+```
+
+!whitelist show
+```
+#⚙️ Spam Configuration (Admin Only)
+
+##✅ !spam threshold [number]
+Adjust message threshold limit.
+
+
+#!spam threshold 6
+
+##✅ !spam window [seconds]
+Adjust monitoring time window.
+
+```
+!spam window 10
+
+```
+#✅ !spam duplicate [number]
+Adjust duplicate message threshold.
+```
+
+!spam duplicate 3
+
+```
+#✅ !spam mentions [number]
+
+##Adjust mention limit threshold.
+```
+
+!spam mentions 4
+
+```
+
+#✅ !spam settings
+Display current spam configuration.
+
+```
+!spam settings
+
 ```
 
 Anyone typing there gets banned instantly + logs recorded.
