@@ -171,38 +171,38 @@ Remove user from whitelist.
 ```
 
 
-##✅ !whitelist show
+## ✅ !whitelist show
 Display current whitelist.
 ```
 !whitelist show
 ```
 #⚙️ Spam Configuration (Admin Only)
 
-##✅ !spam threshold [number]
+## ✅ !spam threshold [number]
 Adjust message threshold limit.
 
 
 #!spam threshold 6
 
-##✅ !spam window [seconds]
+## ✅ !spam window [seconds]
 Adjust monitoring time window.
 
 ```
 !spam window 10
 ```
-#✅ !spam duplicate [number]
+# ✅ !spam duplicate [number]
 Adjust duplicate message threshold.
 ```
 !spam duplicate 3
 ```
-#✅ !spam mentions [number]
+# ✅ !spam mentions [number]
 
 ##Adjust mention limit threshold.
 ```
 !spam mentions 4
 ```
 
-#✅ !spam settings
+# ✅ !spam settings
 Display current spam configuration.
 
 ```
