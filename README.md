@@ -162,22 +162,18 @@ Add user to whitelist (exempt from security rules).
 
 ```
 !whitelist add @username
-
 ```
 ## ✅ !whitelist remove @user
 
 Remove user from whitelist.
 ```
-
 !whitelist remove @username
-
 ```
 
 
 ##✅ !whitelist show
 Display current whitelist.
 ```
-
 !whitelist show
 ```
 #⚙️ Spam Configuration (Admin Only)
@@ -193,22 +189,17 @@ Adjust monitoring time window.
 
 ```
 !spam window 10
-
 ```
 #✅ !spam duplicate [number]
 Adjust duplicate message threshold.
 ```
-
 !spam duplicate 3
-
 ```
 #✅ !spam mentions [number]
 
 ##Adjust mention limit threshold.
 ```
-
 !spam mentions 4
-
 ```
 
 #✅ !spam settings
@@ -216,7 +207,6 @@ Display current spam configuration.
 
 ```
 !spam settings
-
 ```
 
 Anyone typing there gets banned instantly + logs recorded.
