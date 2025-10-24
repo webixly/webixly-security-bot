@@ -6,7 +6,7 @@
 [![repo](https://img.icons8.com/ios-filled/20/FFFFFF/github.png)](https://github.com/yourusername/yourrepo) [![python](https://img.icons8.com/ios-filled/20/FFFFFF/python.png)](https://www.python.org/) [![discord](https://img.icons8.com/ios-filled/20/FFFFFF/discord-logo.png)](https://discord.com/developers) [![license](https://img.icons8.com/ios-filled/20/FFFFFF/certificate.png)](./LICENSE)
 
 
-```
+
 
 ## 📋 Overview
 
@@ -16,10 +16,10 @@
 
 * Python 3.8+
 * Libraries:
-
+```
   * `discord.py`
   * `python-dotenv`
-
+```
 ## 🚀 Installation & Run
 
 1. Clone the repo:
